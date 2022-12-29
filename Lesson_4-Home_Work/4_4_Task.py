@@ -34,8 +34,8 @@ for i in range(k+1):
             polynomial += " + "
     elif i ==k and  list_koef[i] != 0:
         polynomial += f"{list_koef[i]}"
-polynomial += " = 0 "
+polynomial += " = 0"
 print(polynomial)
 
-with open ("Poly2.txt", "a") as fileP:
-    fileP.writelines(polynomial)
+with open ("Poly.txt", "a") as fileP:
+    fileP.writelines(f"{polynomial}\n")
