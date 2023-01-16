@@ -46,7 +46,7 @@ coded_text = codding_text(r_file)
 # print(coded_text) вывод закодированного текста
 
 # Запись кодированного файла
-with open('5_2-text_code_words.txt', 'a',encoding="utf-8" ) as codding_text:
+with open('5_2-text_code_words.txt', 'w',encoding="utf-8" ) as codding_text:
     for i in range(len(coded_text)):
         codding_text.write(f"{coded_text[i]}\n")
 
