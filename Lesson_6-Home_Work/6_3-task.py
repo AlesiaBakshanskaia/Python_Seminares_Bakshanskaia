@@ -5,11 +5,11 @@ def process_string(string):
     names_list = string.split()
     names_list = [i.capitalize() for i in names_list]#отработка случаев введения не всех имен с заглавной буквы
     names_list.sort()
-    return(names_list)
+    return names_list 
 
 list_names = process_string(names)
 
-# print(names_list)
+# print(list_names)
 def dict_names(n_list):
     k_list = [n_list[i][0] for i in range(len(n_list))]
     n_dict = {}.fromkeys(k_list,'')
